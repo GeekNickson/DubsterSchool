@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="test.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/95867cc1b6.js" crossorigin="anonymous"></script>
+    <title> Тесты </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> На главую </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signingupforclasses.html"> Записаться на курсы </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> Пройти тесты </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> О нас </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"> Авторизация </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active">
+
+            </li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/registration-background2.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 text-center">
+        <h2 class="display-3"> Узнай свой уровень английского!</h2>
+        <hr class="my-4 underlineWelcome">
+    </div>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <form method="POST">
+                <div class="questionContainer">
+                    <p class="lead"> 1. When does the train arrive? </p>
+                    <input id="1a" type="radio" name="1q" value="0" class="question">
+                    <label for="1a"> At school </label>
+                    <input id="1b" type="radio" name="1q" value="0" class="question">
+                    <label for="1b"> Last year </label>
+                    <input id="1c" type="radio" name="1q" value="1" class="question">
+                    <label for="1c"> At 8pm </label>
+                </div>
+
+                <div class="questionContainer">
+                    <p class="lead"> 2. Do you know how I can ... to the post office? </p>
+                    <input id="2a" type="radio" name="2q" value="1" class="question">
+                    <label for="2a"> get </label>
+                    <input id="2b" type="radio" name="2q" value="0" class="question">
+                    <label for="2b"> take </label>
+                    <input id="2c" type="radio" name="2q" value="0" class="question">
+                    <label for="2c"> go </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 3. My dad ... a car for two years. </p>
+                    <input id="3a" type="radio" name="3q" value="0" class="question">
+                    <label for="3a"> drives </label>
+                    <input id="3b" type="radio" name="3q" value="0" class="question">
+                    <label for="3b"> drived </label>
+                    <input id="3c" type="radio" name="3q" value="1" class="question">
+                    <label for="3c"> has been driving </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 4. When I look ... myself ... the mirror, I see a unicorn. </p>
+                    <input id="4a" type="radio" name="4q" value="0" class="question">
+                    <label for="4a"> on, at </label>
+                    <input id="4b" type="radio" name="4q" value="1" class="question">
+                    <label for="4b"> at, in </label>
+                    <input id="4c" type="radio" name="4q" value="0" class="question">
+                    <label for="4c"> for, on </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 5. Another day, another amazing opportunity ... amazing! </p>
+                    <input id="5a" type="radio" name="5q" value="0" class="question">
+                    <label for="5a"> would be </label>
+                    <input id="5b" type="radio" name="5q" value="1" class="question">
+                    <label for="5b"> to be </label>
+                    <input id="5c" type="radio" name="5q" value="0" class="question">
+                    <label for="5c"> is being </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 6. I've been running all day! I'm so ... </p>
+                    <input id="6a" type="radio" name="6q" value="1" class="question">
+                    <label for="6b"> exhausted </label>
+                    <input id="6b" type="radio" name="6q" value="0" class="question">
+                    <label for="6b"> relaxed </label>
+                    <input id="6c" type="radio" name="6q" value="0" class="question">
+                    <label for="6c"> curious </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 7. He ... already ... his chores before his mother came home. </p>
+                    <input id="7a" type="radio" name="7q" value="0" class="question">
+                    <label for="7a"> has, done </label>
+                    <input id="7b" type="radio" name="7q" value="0" class="question">
+                    <label for="7b"> have, did </label>
+                    <input id="7c" type="radio" name="7q" value="1" class="question">
+                    <label for="7c"> had, done </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 8. ... you do your homework, you can't play playstation! </p>
+                    <input id="8a" type="radio" name="8q" value="1" class="question">
+                    <label for="8a"> Unless </label>
+                    <input id="8b" type="radio" name="8q" value="0" class="question">
+                    <label for="8b"> If </label>
+                    <input id="8c" type="radio" name="8q" value="0" class="question">
+                    <label for="8c"> Though </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 9. Eugene likes ... with his friends. </p>
+                    <input id="9a" type="radio" name="9q" value="1" class="question">
+                    <label for="9a"> hanging out </label>
+                    <input id="9b" type="radio" name="9q" value="0" class="question">
+                    <label for="9b"> hanging on </label>
+                    <input id="9c" type="radio" name="9q" value="0" class="question">
+                    <label for="9c"> calling out </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 10. Young people tend to move to cities, ... older ones prefer living in the
+                        village.
+                    </p>
+                    <input id="10a" type="radio" name="10q" value="0" class="question">
+                    <label for="10a"> then </label>
+                    <input id="10b" type="radio" name="10q" value="1" class="question">
+                    <label for="10b"> whereas </label>
+                    <input id="10c" type="radio" name="10q" value="0" class="question">
+                    <label for="10c"> as </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 11. I ... getting to bed at 2pm. </p>
+                    <input id="11a" type="radio" name="11q" value="0" class="question">
+                    <label for="11a"> stand out </label>
+                    <input id="11b" type="radio" name="11q" value="0" class="question">
+                    <label for="11b"> wake up </label>
+                    <input id="11c" type="radio" name="11q" value="1" class="question">
+                    <label for="11c"> can't help </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 12. Khajiit has wares, if you ... coin. </p>
+                    <input id="12a" type="radio" name="12q" value="0" class="question">
+                    <label for="12a"> want </label>
+                    <input id="12b" type="radio" name="12q" value="0" class="question">
+                    <label for="12b"> make </label>
+                    <input id="12c" type="radio" name="12q" value="1" class="question">
+                    <label for="12c"> have </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 13. Let's ... the good weather and go to the beach! </p>
+                    <input id="13a" type="radio" name="13q" value="1" class="question">
+                    <label for="13a"> take advantage of </label>
+                    <input id="13b" type="radio" name="13q" value="0" class="question">
+                    <label for="13b"> make use of </label>
+                    <input id="13c" type="radio" name="13q" value="0" class="question">
+                    <label for="13c"> take care </label>
+                </div>
+                <div class="questionContainer">
+                    <p class="lead"> 14. John and his mom had a quarrel yesterday but today they ... . </p>
+                    <input id="14a" type="radio" name="14q" value="0" class="question">
+                    <label for="14a"> made out </label>
+                    <input id="14b" type="radio" name="14q" value="1" class="question">
+                    <label for="14b"> made up </label>
+                    <input id="14c" type="radio" name="14q" value="0" class="question">
+                    <label for="14c"> freaked out </label>
+                </div>
+
+                <div class="questionContainer">
+                    <p class="lead"> 15. The dress she ... yesterday looked magnificient. </p>
+                    <input id="15a" type="radio" name="15q" value="0" class="question">
+                    <label for="15a"> carried </label>
+                    <input id="15b" type="radio" name="15q" value="1" class="question">
+                    <label for="15b"> wore </label>
+                    <input id="15c" type="radio" name="15q" value="0" class="question">
+                    <label for="15c"> dropped </label>
+                </div>
+                <div id="formFooter">
+                    <button id="check-test-button" type="button" class="btn btn-primary btn-lg fadeIn fifth" onclick="checkTest()"> Проверить себя! </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2 id="social-banner"> Мы в социальных сетях </h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://vk.com/nicholasneutron"><i class="fab fa-vk"></i></a>
+                <a href="vk.com/nicholasneutron"><i class="fab fa-youtube"></i></a>
+                <a href="vk.com/nicholasneutron"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5> Наши контакты </h5>
+                    <hr class="light">
+                    <p> 999-612-97-35 </p>
+                    <p> nicholasneutron2277@gmail.com </p>
+                    <p> г. Владимир </p>
+                    <p> ул. Горького </p>
+                </div>
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5> Как мы работаем </h5>
+                    <hr class="light">
+                    <p> Понедельник: 10:00 - 19:00 </p>
+                    <p> Среда: 10:00 - 19:00 </p>
+                    <p> Пятница: 10:00 - 19:00 </p>
+                    <p> Суббота: 12:00 - 16:00 </p>
+                </div>
+                <div class="col-12">
+                    <hr class="lightLong">
+                    <h5> &copy; nicholasEugene </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function checkTest() {
+            const questionCount = 15;
+            let $questions = $(".questionContainer");
+            if($questions.find("input:radio:checked").length !== $questions.length) {
+                alert("Вы ответили не на все вопросы!");
+                return;
+            }
+            
+            let answers = [];
+            $('input[type="radio"]:checked').each(function () {
+                answers.push($(this).val());
+            });
+            let sum = 0;
+            answers.forEach(answer => {
+                sum += +answer;
+            });
+            alert(`Вы ответили правильно на ${sum} вопросов из ${questionCount}`);
+            return sum;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="signingupforclasses.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/95867cc1b6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title> Записаться на курсы </title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> На главую </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> Записаться на курсы </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html"> Пройти тесты </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> О нас </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"> Авторизация </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active">
+
+            </li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/registration-background2.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="img/logo.png" id="icon" alt="User Icon" />
+            </div>
+            <script src="js/send_data.js"></script>
+            <!-- Login Form -->
+            <form action="" method="POST">
+                <input type="text" id="first-name" class="fadeIn second" name="name" placeholder="Ваше имя">
+                <input type="text" id="last-name" class="fadeIn third" name="lastname" placeholder="Ваша фамилия">
+                <input type="text" id="phone-number" class="fadeIn fourth" name="phonenumber"
+                    placeholder="Ваш номер телефона">
+                <input type="text" id="email" class="fadeIn fifth" name="email" placeholder="Введите ваш e-mail">
+                <div id="formFooter">
+                    <h4 class="display-5"> Ваш уровень английского </h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="lead"> Начинающий </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="lead"> Средний </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="lead"> Продвинутый </p>
+                        </div>
+                    </div>
+                    <input type="range" class="custom-range fadeIn fifth" id="language-level" min=1 max=3 step=1
+                        style="width: 75%;">
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 container">
+                        <button id="submit-button" type="button" class="btn btn-primary btn-lg fadeIn fifth"
+                            onclick="sendRequest()"> Записаться
+                        </button>
+                        
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </form>
+
+            <!-- Remind Passowrd -->
+
+
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2 id="social-banner"> Мы в социальных сетях </h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://vk.com/nicholasneutron"><i class="fab fa-vk"></i></a>
+                <a href="vk.com/nicholasneutron"><i class="fab fa-youtube"></i></a>
+                <a href="vk.com/nicholasneutron"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5> Наши контакты </h5>
+                    <hr class="light">
+                    <p> 999-612-97-35 </p>
+                    <p> nicholasneutron2277@gmail.com </p>
+                    <p> г. Владимир </p>
+                    <p> ул. Горького </p>
+                </div>
+                <div class="col-md-6">
+                    <hr class="light">
+                    <h5> Как мы работаем </h5>
+                    <hr class="light">
+                    <p> Понедельник: 10:00 - 19:00 </p>
+                    <p> Среда: 10:00 - 19:00 </p>
+                    <p> Пятница: 10:00 - 19:00 </p>
+                    <p> Суббота: 12:00 - 16:00 </p>
+                </div>
+                <div class="col-12">
+                    <hr class="lightLong">
+                    <h5> &copy; nicholasEugene </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
